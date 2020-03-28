@@ -1,0 +1,146 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	.\src\kalman-cpp\kalman.hpp	/^  Eigen::MatrixXd A, C, Q, R, P, K, P0;$/;"	m	class:KalmanFilter
+BFS	.\src\movingtracker.cpp	/^void MovingTracker::BFS(deque<Cell>& cellList, Cell& cell){$/;"	f	class:MovingTracker
+C	.\src\kalman-cpp\kalman.hpp	/^  Eigen::MatrixXd A, C, Q, R, P, K, P0;$/;"	m	class:KalmanFilter
+Cell	.\src\movingtracker.h	/^typedef std::pair<int, int> Cell;$/;"	t
+CellList	.\src\movingtracker.h	/^typedef std::vector<Cell> CellList;$/;"	t
+ClockwisePointSwitch	.\src\l_shape_tracker.cpp	/^void LShapeTracker::ClockwisePointSwitch(){$/;"	f	class:LShapeTracker
+Cluster	.\src\cluster.cpp	/^Cluster::Cluster(unsigned long int id, const pointList& new_points, const double& dt, const string& world_frame, const tf::Transform& ego_pose){$/;"	f	class:Cluster
+Cluster	.\src\cluster.h	/^class Cluster {$/;"	c
+CounterClockwisePointSwitch	.\src\l_shape_tracker.cpp	/^void LShapeTracker::CounterClockwisePointSwitch(){$/;"	f	class:LShapeTracker
+I	.\src\kalman-cpp\kalman.hpp	/^  Eigen::MatrixXd I;$/;"	m	class:KalmanFilter
+K	.\src\kalman-cpp\kalman.hpp	/^  Eigen::MatrixXd A, C, Q, R, P, K, P0;$/;"	m	class:KalmanFilter
+KalmanFilter	.\src\kalman-cpp\kalman.cpp	/^KalmanFilter::KalmanFilter($/;"	f	class:KalmanFilter
+KalmanFilter	.\src\kalman-cpp\kalman.cpp	/^KalmanFilter::KalmanFilter() {}$/;"	f	class:KalmanFilter
+KalmanFilter	.\src\kalman-cpp\kalman.hpp	/^class KalmanFilter {$/;"	c
+L1	.\src\cluster.h	/^  double L1, L2, thetaL1, thetaL2;$/;"	m	class:Cluster
+L1_box	.\src\cluster.h	/^  double cx, cy, L1_box, L2_box, th;$/;"	m	class:Cluster
+L2	.\src\cluster.h	/^  double L1, L2, thetaL1, thetaL2;$/;"	m	class:Cluster
+L2_box	.\src\cluster.h	/^  double cx, cy, L1_box, L2_box, th;$/;"	m	class:Cluster
+LShapeTracker	.\src\l_shape_tracker.cpp	/^LShapeTracker::LShapeTracker(){}\/\/Creates a blank estimator$/;"	f	class:LShapeTracker
+LShapeTracker	.\src\l_shape_tracker.cpp	/^LShapeTracker::LShapeTracker(const Point& corner_point, const double& L1, const double& L2, const double& theta, const double& dt){$/;"	f	class:LShapeTracker
+LShapeTracker	.\src\l_shape_tracker.h	/^class LShapeTracker {$/;"	c
+MovingTracker	.\src\movingtracker.cpp	/^MovingTracker::MovingTracker(){$/;"	f	class:MovingTracker
+MovingTracker	.\src\movingtracker.h	/^class MovingTracker$/;"	c
+P	.\src\kalman-cpp\kalman.hpp	/^  Eigen::MatrixXd A, C, Q, R, P, K, P0;$/;"	m	class:KalmanFilter
+P0	.\src\kalman-cpp\kalman.hpp	/^  Eigen::MatrixXd A, C, Q, R, P, K, P0;$/;"	m	class:KalmanFilter
+Point	.\src\cluster.h	/^typedef std::pair<double, double> Point;$/;"	t
+Point	.\src\l_shape_tracker.h	/^typedef std::pair<double, double> Point;$/;"	t
+Point	.\src\movingtracker.h	/^typedef std::pair<double, double> Point;$/;"	t
+Q	.\src\kalman-cpp\kalman.hpp	/^  Eigen::MatrixXd A, C, Q, R, P, K, P0;$/;"	m	class:KalmanFilter
+R	.\src\kalman-cpp\kalman.hpp	/^  Eigen::MatrixXd A, C, Q, R, P, K, P0;$/;"	m	class:KalmanFilter
+a	.\src\cluster.h	/^  float r, g, b, a; \/\/color of the cluster$/;"	m	class:Cluster
+addtoqueue	.\src\movingtracker.cpp	/^void MovingTracker::addtoqueue(deque<Cell>& cellList, deque<Cell>& cellList_temp, Cell cell){$/;"	f	class:MovingTracker
+age	.\src\cluster.h	/^  unsigned long int age; \/\/age of the cluster$/;"	m	class:Cluster
+areaCriterion	.\src\cluster.cpp	/^double Cluster::areaCriterion(const VectorXd& C1, const VectorXd& C2){$/;"	f	class:Cluster
+b	.\src\cluster.h	/^  float r, g, b, a; \/\/color of the cluster$/;"	m	class:Cluster
+blue_flag	.\src\cluster.h	/^  bool red_flag, green_flag, blue_flag;$/;"	m	class:Cluster
+boxcenter_marker_	.\src\cluster.h	/^  visualization_msgs::Marker boxcenter_marker_;$/;"	m	class:Cluster
+calcMean	.\src\cluster.cpp	/^void Cluster::calcMean(const pointList& c){$/;"	f	class:Cluster
+callback	.\src\movingtracker.cpp	/^void MovingTracker::callback(const nav_msgs::OccupancyGrid::ConstPtr& map_in){$/;"	f	class:MovingTracker
+cclusters	.\src\movingtracker.h	/^  unsigned long int cclusters= 0;\/\/counter for the cluster objects to be used as id for the markers$/;"	m	class:MovingTracker
+cg	.\src\movingtracker.h	/^  unsigned long int cg       = 1;\/\/group counter to be used as id of the clusters$/;"	m	class:MovingTracker
+changeStates	.\src\kalman-cpp\kalman.cpp	/^void KalmanFilter::changeStates(const Eigen::VectorXd& new_states) {$/;"	f	class:KalmanFilter
+changeStates	.\src\l_shape_tracker.cpp	/^void LShapeTracker::changeStates(const Eigen::Vector4d& new_dynamic_states,const Eigen::Vector3d& new_shape_states ){$/;"	f	class:LShapeTracker
+closenessCriterion	.\src\cluster.cpp	/^double Cluster::closenessCriterion(const VectorXd& C1, const VectorXd& C2, const float& d0){$/;"	f	class:Cluster
+closest_corner_point	.\src\cluster.h	/^  Point closest_corner_point;$/;"	m	class:Cluster
+clusters	.\src\movingtracker.h	/^  vector<Cluster> clusters;$/;"	m	class:MovingTracker
+corner_list	.\src\cluster.h	/^  vector<Point> corner_list;$/;"	m	class:Cluster
+cx	.\src\cluster.h	/^  double cx, cy, L1_box, L2_box, th;$/;"	m	class:Cluster
+cy	.\src\cluster.h	/^  double cx, cy, L1_box, L2_box, th;$/;"	m	class:Cluster
+detectCornerPointSwitch	.\src\cluster.cpp	/^void Cluster::detectCornerPointSwitch(double& from, double& to){$/;"	f	class:Cluster
+dt	.\src\kalman-cpp\kalman.hpp	/^  double dt;$/;"	m	class:KalmanFilter
+dt	.\src\movingtracker.h	/^  double dt;$/;"	m	class:MovingTracker
+dth	.\src\movingtracker.h	/^  double dth;$/;"	m	class:MovingTracker
+dur_size_rectangle_fitting	.\src\cluster.h	/^  pair<int, int> dur_size_rectangle_fitting;$/;"	m	class:Cluster
+dynamic	.\src\l_shape_tracker.h	/^  KalmanFilter dynamic;$/;"	m	class:LShapeTracker
+ego_coordinates	.\src\cluster.h	/^  Point ego_coordinates;$/;"	m	class:Cluster
+euclidean_distance	.\src\movingtracker.h	/^  double euclidean_distance;$/;"	m	class:MovingTracker
+findTurn	.\src\cluster.cpp	/^double findTurn(double& new_angle, double& old_angle){$/;"	f
+frame_name	.\src\cluster.h	/^  string frame_name;$/;"	m	class:Cluster
+g	.\src\cluster.h	/^  float r, g, b, a; \/\/color of the cluster$/;"	m	class:Cluster
+getArrowVisualisationMessage	.\src\cluster.cpp	/^visualization_msgs::Marker Cluster::getArrowVisualisationMessage() {$/;"	f	class:Cluster
+getBoundingBoxCenterVisualisationMessage	.\src\cluster.cpp	/^ visualization_msgs::Marker Cluster::getBoundingBoxCenterVisualisationMessage() {$/;"	f	class:Cluster
+getBoundingBoxVisualisationMessage	.\src\cluster.cpp	/^visualization_msgs::Marker Cluster::getBoundingBoxVisualisationMessage() {$/;"	f	class:Cluster
+getBoxModelVisualisationMessage	.\src\cluster.cpp	/^visualization_msgs::Marker Cluster::getBoxModelVisualisationMessage() {$/;"	f	class:Cluster
+getClosestCornerPointVisualisationMessage	.\src\cluster.cpp	/^ visualization_msgs::Marker Cluster::getClosestCornerPointVisualisationMessage() {$/;"	f	class:Cluster
+getClusterVisualisationMessage	.\src\cluster.cpp	/^visualization_msgs::Marker Cluster::getClusterVisualisationMessage() {$/;"	f	class:Cluster
+getLShapeVisualisationMessage	.\src\cluster.cpp	/^visualization_msgs::Marker Cluster::getLShapeVisualisationMessage() {$/;"	f	class:Cluster
+getLineVisualisationMessage	.\src\cluster.cpp	/^visualization_msgs::Marker Cluster::getLineVisualisationMessage() {$/;"	f	class:Cluster
+getPoseCovariance	.\src\cluster.cpp	/^visualization_msgs::Marker Cluster::getPoseCovariance(){$/;"	f	class:Cluster
+getRectangleFittingExecutionTime	.\src\cluster.h	/^  pair<int, int> getRectangleFittingExecutionTime(){return dur_size_rectangle_fitting;};$/;"	f	class:Cluster
+getThetaBoxVisualisationMessage	.\src\cluster.cpp	/^visualization_msgs::Marker Cluster::getThetaBoxVisualisationMessage() {$/;"	f	class:Cluster
+getThetaL1VisualisationMessage	.\src\cluster.cpp	/^visualization_msgs::Marker Cluster::getThetaL1VisualisationMessage() {$/;"	f	class:Cluster
+getThetaL2VisualisationMessage	.\src\cluster.cpp	/^visualization_msgs::Marker Cluster::getThetaL2VisualisationMessage() {$/;"	f	class:Cluster
+green_flag	.\src\cluster.h	/^  bool red_flag, green_flag, blue_flag;$/;"	m	class:Cluster
+id	.\src\cluster.h	/^  unsigned long int id; \/\/identifier for the cluster$/;"	m	class:Cluster
+init	.\src\kalman-cpp\kalman.cpp	/^void KalmanFilter::init() {$/;"	f	class:KalmanFilter
+init	.\src\kalman-cpp\kalman.cpp	/^void KalmanFilter::init(double t0, const Eigen::VectorXd& x0) {$/;"	f	class:KalmanFilter
+initialized	.\src\kalman-cpp\kalman.hpp	/^  bool initialized;$/;"	m	class:KalmanFilter
+kf_mean	.\src\cluster.h	/^  KalmanFilter kf_mean;$/;"	m	class:Cluster
+l1l2	.\src\cluster.h	/^  vector<Point> l1l2; \/\/save coordinates of the three points that define the lines$/;"	m	class:Cluster
+l_shape	.\src\cluster.h	/^  LShapeTracker l_shape;$/;"	m	class:Cluster
+l_shape	.\src\movingtracker.h	/^typedef std::vector<double> l_shape;$/;"	t
+l_shapes	.\src\movingtracker.h	/^typedef std::vector<l_shape> l_shapes;$/;"	t
+lidar_frame	.\src\movingtracker.h	/^  string lidar_frame;$/;"	m	class:MovingTracker
+lineIntersection	.\src\cluster.cpp	/^Point Cluster::lineIntersection(double& a1, double& b1, double& c1, double& a2, double& b2, double& c2){$/;"	f	class:Cluster
+lshapeToBoxModelConversion	.\src\l_shape_tracker.cpp	/^void LShapeTracker::lshapeToBoxModelConversion(double& x, double& y, double& L1, double& L2, double& th){$/;"	f	class:LShapeTracker
+m	.\src\kalman-cpp\kalman.hpp	/^  int m, n;$/;"	m	class:KalmanFilter
+main	.\src\main.cpp	/^int main(int argc, char **argv)$/;"	f
+map	.\src\movingtracker.h	/^  nav_msgs::OccupancyGrid map;$/;"	m	class:MovingTracker
+mean	.\src\cluster.h	/^  std::pair<double, double> mean() { return mean_values; }; \/\/Return mean of cluster.$/;"	f	class:Cluster
+meanX	.\src\cluster.h	/^  double meanX() { return mean_values.first; };$/;"	f	class:Cluster
+meanY	.\src\cluster.h	/^  double meanY() { return mean_values.second;};$/;"	f	class:Cluster
+mean_values	.\src\cluster.h	/^  std::pair<double, double> mean_values;$/;"	m	class:Cluster
+msg_track_box	.\src\cluster.h	/^  movingtracker::Track msg_track_box;$/;"	m	class:Cluster
+msg_track_mean	.\src\cluster.h	/^  movingtracker::Track msg_track_mean;$/;"	m	class:Cluster
+msg_track_mean_kf	.\src\cluster.h	/^  movingtracker::Track msg_track_mean_kf;$/;"	m	class:Cluster
+n	.\src\kalman-cpp\kalman.hpp	/^  int m, n;$/;"	m	class:KalmanFilter
+new_cluster	.\src\cluster.h	/^  pointList new_cluster;$/;"	m	class:Cluster
+normalize_angle	.\src\cluster.cpp	/^static inline double normalize_angle(double angle){$/;"	f	file:
+normalize_angle_positive	.\src\cluster.cpp	/^static inline double normalize_angle_positive(double angle){$/;"	f	file:
+old_thetaL1	.\src\cluster.h	/^  double old_thetaL1, old_thetaL2;$/;"	m	class:Cluster
+old_thetaL2	.\src\cluster.h	/^  double old_thetaL1, old_thetaL2;$/;"	m	class:Cluster
+p_marker_pub	.\src\movingtracker.h	/^  bool p_marker_pub;$/;"	m	class:MovingTracker
+perpendicularDistance	.\src\cluster.cpp	/^double Cluster::perpendicularDistance(const Point &pt, const Point &lineStart, const Point &lineEnd){$/;"	f	class:Cluster
+pi	.\src\cluster.h	/^const double pi = 3.141592653589793238463;$/;"	v
+pointList	.\src\cluster.h	/^typedef std::vector<Point> pointList;$/;"	t
+pointList	.\src\movingtracker.h	/^typedef std::vector<Point> pointList;$/;"	t
+populateTrackingMsgs	.\src\cluster.cpp	/^void Cluster::populateTrackingMsgs(){$/;"	f	class:Cluster
+previous_mean_values	.\src\cluster.h	/^  std::pair<double, double> previous_mean_values;$/;"	m	class:Cluster
+pub_marked_map	.\src\movingtracker.h	/^  ros::Publisher pub_marked_map;$/;"	m	class:MovingTracker
+pub_marker_array	.\src\movingtracker.h	/^  ros::Publisher pub_marker_array;$/;"	m	class:MovingTracker
+pub_tracks_box	.\src\movingtracker.h	/^  ros::Publisher pub_tracks_box;$/;"	m	class:MovingTracker
+pub_tracks_mean	.\src\movingtracker.h	/^  ros::Publisher pub_tracks_mean;$/;"	m	class:MovingTracker
+pub_tracks_mean_kf	.\src\movingtracker.h	/^  ros::Publisher pub_tracks_mean_kf;$/;"	m	class:MovingTracker
+publishmap	.\src\movingtracker.cpp	/^void MovingTracker::publishmap(){$/;"	f	class:MovingTracker
+r	.\src\cluster.h	/^  float r, g, b, a; \/\/color of the cluster$/;"	m	class:Cluster
+ramerDouglasPeucker	.\src\cluster.cpp	/^void Cluster::ramerDouglasPeucker(const vector<Point> &pointList, double epsilon, vector<Point> &out){$/;"	f	class:Cluster
+rectangleFitting	.\src\cluster.cpp	/^void Cluster::rectangleFitting(const pointList& new_cluster){$/;"	f	class:Cluster
+red_flag	.\src\cluster.h	/^  bool red_flag, green_flag, blue_flag;$/;"	m	class:Cluster
+shape	.\src\l_shape_tracker.h	/^  KalmanFilter shape;$/;"	m	class:LShapeTracker
+shortest_angular_distance	.\src\cluster.cpp	/^static inline double shortest_angular_distance(double from, double to){$/;"	f	file:
+state	.\src\kalman-cpp\kalman.hpp	/^  Eigen::VectorXd state() { return x_hat; };$/;"	f	class:KalmanFilter
+sub_map	.\src\movingtracker.h	/^  ros::Subscriber sub_map;$/;"	m	class:MovingTracker
+t	.\src\kalman-cpp\kalman.hpp	/^  double t0, t;$/;"	m	class:KalmanFilter
+t0	.\src\kalman-cpp\kalman.hpp	/^  double t0, t;$/;"	m	class:KalmanFilter
+tf_listener	.\src\movingtracker.h	/^  tf::TransformListener tf_listener;$/;"	m	class:MovingTracker
+th	.\src\cluster.h	/^  double cx, cy, L1_box, L2_box, th;$/;"	m	class:Cluster
+thetaL1	.\src\cluster.h	/^  double L1, L2, thetaL1, thetaL2;$/;"	m	class:Cluster
+thetaL2	.\src\cluster.h	/^  double L1, L2, thetaL1, thetaL2;$/;"	m	class:Cluster
+time	.\src\kalman-cpp\kalman.hpp	/^  double time() { return t; };$/;"	f	class:KalmanFilter
+time	.\src\movingtracker.h	/^  ros::Time time;$/;"	m	class:MovingTracker
+update	.\src\cluster.cpp	/^void Cluster::update(const pointList& new_points, const double dt, const tf::Transform& ego_pose) {$/;"	f	class:Cluster
+update	.\src\kalman-cpp\kalman.cpp	/^void KalmanFilter::update(const Eigen::VectorXd& y) {$/;"	f	class:KalmanFilter
+update	.\src\kalman-cpp\kalman.cpp	/^void KalmanFilter::update(const Eigen::VectorXd& y, double dt) {$/;"	f	class:KalmanFilter
+update	.\src\kalman-cpp\kalman.cpp	/^void KalmanFilter::update(const Eigen::VectorXd& y, double dt, const Eigen::MatrixXd A) {$/;"	f	class:KalmanFilter
+update	.\src\l_shape_tracker.cpp	/^void LShapeTracker::update(const Point& corner_point, const double& L1, const double& L2, const double& theta, const double& dt) {$/;"	f	class:LShapeTracker
+visualiseGroupedPoints	.\src\movingtracker.cpp	/^void MovingTracker::visualiseGroupedPoints(const deque<deque<Cell>>& cellLists){$/;"	f	class:MovingTracker
+world_frame	.\src\movingtracker.h	/^  string world_frame;$/;"	m	class:MovingTracker
+x_hat	.\src\kalman-cpp\kalman.hpp	/^  Eigen::VectorXd x_hat, x_hat_new;$/;"	m	class:KalmanFilter
+x_hat_new	.\src\kalman-cpp\kalman.hpp	/^  Eigen::VectorXd x_hat, x_hat_new;$/;"	m	class:KalmanFilter
